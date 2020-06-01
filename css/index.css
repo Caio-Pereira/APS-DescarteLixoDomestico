@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+html, *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    color: #0D0D0D;
+    font-family: 'Roboto', sans-serif;
+
+    transition: color 0.5s;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #EEF0F0;
+}
+img{
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+
+nav{
+    background-color: #EEF0F0;
+}
+    nav a:hover{
+        color:#0B7063 !important;  
+    }
+
+
+header{
+    height: 70vh;
+    
+    background-color: #EEF0F0;
+
+    display: flex;
+    justify-content: space-around;
+}
+    header img{
+        width: 50vmax;
+        align-self: flex-end;
+
+        z-index: 1;
+        margin-bottom: -10vw;
+    }
+    .header{
+        align-self: center;
+        margin-left: 4vw;
+        width: 600px;
+    }
+        .header h1{
+            color:#0B7063;
+            font-size: 5rem;
+            font-weight: 600;
+        }
+        .header p{
+            font-size: 1.2rem;
+            line-height: 25px;
+            width: 90%;
+        }
+
+
+main{
+    border-radius: 70px 70px 0 0;
+    padding: 10vw 15vw 1rem 15vw;
+    
+    background-color: #FFFFFF;
+}
+    .topico h3{
+        font-size: 2.3rem;
+        font-weight: 600;
+        color: #0B7063;
+
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .topico h4{
+        color: #0B7063;
+    }
+    .topico p{
+        font-size: 1.2rem;
+        font-weight: 300;
+        line-height: 30px;
+
+        text-align: justify;
+    }
+    .topico-image{
+        width: 50vw;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+        .topico-image img{
+            width: 100%;
+        }
+        
+        
+.destaque .conteudo{
+    background-color: #0B7063;
+    margin: 0;
+    padding: 0 15vw 1rem 15vw;
+}
+    .destaque svg{
+        display: block;
+        background-color: #FFFFFF;
+    }
+    .conteudo h3{
+        font-size: 2.3rem;
+        font-weight: 600;
+        color: #ffffff;
+
+        margin-bottom: 10px;
+    }
+    .conteudo p{
+        font-size: 1.2rem;
+        font-weight: 300;
+        line-height: 30px;
+
+        text-align: justify;
+
+        color: #FFFFFF;
+    }
+
+
+footer{
+    padding-top: 70px;
+    padding-bottom: 30px;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+    footer a{
+        color: black;
+    }
+    footer a:hover{
+        color: black;
+    }
+    footer p{
+        margin: 0;
+    }
+
+
+/* Responsivo */
+@media screen and (max-width:1160px){
+    .header h1{
+        font-size: 3.7rem;
+    }
+}
+@media screen and (max-width: 1000px) {
+    header img{
+        display: none;
+    }
+
+    main{
+        padding: 10vw 5vw;
+    }
+    .topico p{
+        text-align: left;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    header{
+        height: auto;
+        padding-bottom: 20px;
+    }
+        .header{
+            align-self: unset;
+            margin: 90px  0 0 4vw;
+            width: 420px;
+        }
+            .header h1{
+                font-size: 3.5rem;
+            }
+            .header p{
+                width: 80%;
+            }
+}
+
+@media screen and (max-width: 450px) {
+    .header{
+        justify-self: center;
+        width: 300px;
+    }
+        .header h1{
+            font-size: 2.4rem;
+        }
+}
